@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    background: rgb(77, 145, 97);
+    color: white;
+}
+
+.pesquisar {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background: rgb(40, 80, 52);
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    color: white;
+}
+
+.logo {
+    flex: 20%;
+    margin-left: 10%;
+    text-align: left;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 34px;
+}
+
+.menu {
+    flex: 70%;
+    text-align: right;
+    padding: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+}
+
+#botao {
+    background: #180f4a;
+    padding: 10px 26px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+.section1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    text-align: center;
+    width: 90%;
+}
+
+.section1 h2 {
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.carde {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 30%;
+    margin: 10px;
+    border: 1px solid #1d862b;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    color: white;
+    overflow: hidden;
+    height: 500px;
+}
+
+.carde img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-bottom: 1px solid #1d862b;
+}
+
+.carde-text {
+    padding: 10px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.carde-text h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.carde p {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+footer {
+    margin-top: 200px;
+    height: 400px;
+    background-image: linear-gradient(180deg, #255e36, rgb(8, 36, 8), black);
+    text-align: center;
+    border-top: 5px solid #4ca551;
+}
+
+.logo-rodape {
+    padding: 100px;
+}
+
+.agencia {
+    color: white;
+    font-size: 34px;
+}
+
+.whats {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+
+html ::-webkit-scrollbar {
+    width: 10px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #1d3b1f;
+}
+
+html ::-webkit-scrollbar-track {
+    background: #66c251;
+}
