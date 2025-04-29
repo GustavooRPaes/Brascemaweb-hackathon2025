@@ -1,0 +1,363 @@
+*{
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body{
+    margin: 0;
+    background: #242424;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.pesquisar{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background: #242424;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    color: white;
+}
+
+.logo{
+    flex: 20%;
+    margin-left: 10%;
+    /*border: 1px solid red;*/
+    text-align: left;   
+}
+
+.logo h1{
+    color: white;
+    font-size: 34px;
+}
+
+.menu{
+    flex: 70%;
+    /*border: 1px solid green;*/
+    text-align: right;
+    padding: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+}
+
+.menu a:hover{
+    color: #29ff69;
+    border-top: 4px solid #113f1f;
+}
+
+#botao{
+    background: #023807;
+    padding: 10px 26px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+#botao:hover{
+    border: none;
+    background: #44a85a;
+}
+
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    color: white;
+}
+
+.headline{
+    margin-left: 10%;
+    flex: 40%;
+    /* border: 1px solid black; */
+}
+
+.headline h2{
+    font-weight: 900;
+    font-size: 20px;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.headline p{
+    
+    font-size: 50px;
+    text-align: center;
+}
+
+.contact-btn{
+    display: inline-block;
+    background: rgb(30, 134, 39);
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.contact-btn:hover{
+    background: #180f4a;
+}
+
+.img-headline{
+    margin-right: 10%;
+    flex: 40%;
+    /* border: 1px solid pink; */
+    text-align: center;
+}
+
+section{
+    display: inline-block;
+    margin-top: 80px;
+    /* border: 1px solid black; */
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    text-align: center;
+    width: 90%;
+}
+
+section h2{
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.servicos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    height: 360px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(12, 71, 0, 0.1);
+}
+
+.texto-oculto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 39, 2, 0.836);
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1; /* Garantir que o texto fique sobre a imagem */
+    opacity: 1; /* Tornar o texto visível sempre */
+    visibility: visible; /* Tornar o texto visível sempre */
+}
+
+.texto-oculto h3, .texto-oculto p {
+    margin: 10px 0;
+    white-space: normal; /* Impede quebras de linha desnecessárias */
+}
+
+.texto-oculto a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.texto-oculto a:hover {
+    text-decoration: underline;
+}
+
+
+footer{
+    margin-top: 200px;
+    height: 400px;
+    background-image:linear-gradient(180deg, #1b8d17, #255e36, rgb(8, 36, 8));
+    text-align: center;
+    border-top: 5px solid #4ca551;
+}
+
+.logo-rodape{
+    padding: 100px;
+}
+
+.agencia{
+    color: white;
+    font-size: 34px;
+}
+
+.whats{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+
+html ::-webkit-scrollbar{
+    width: 10px;
+}
+
+html ::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+    background: #1d3b1f;
+}
+
+html ::-webkit-scrollbar-track{
+    background: #66c251;
+}
+.carde{
+    border: 1px solid green;
+    border-radius: 10px;
+    display: inline-flexbox
+}
+.carde {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 30%;
+    margin: 10px;
+    border: 1px solid #1d862b;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    color: white;
+    overflow: hidden;
+    height: 500px;
+}
+
+.carde img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-bottom: 1px solid #1d862b;
+}
+
+.carde-text {
+    padding: 10px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.carde-text h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.carde p {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.section1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    width: 90%;
+}
+
+.section1 h2 {
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.caixa{
+    width: 15cm;
+    height: 10cm;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+}  
+
+form{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.containercadas{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: white;
+  border: 1px solid #1d862b;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: black;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+  }
+  
+.btn:hover {
+    transition: 1s ease-in-out;
+    background: #1d3b1f;
+    color: white;
+  }
+  
+.btn:hover svg {
+    stroke-dashoffset: -480;
+  }
+  
+.btn span {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 100;
+  }
+label{
+    color: black;
+}
+
+html ::-webkit-scrollbar {
+    width: 10px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #1d3b1f;
+}
+
+html ::-webkit-scrollbar-track {
+    background: #66c251;
+}

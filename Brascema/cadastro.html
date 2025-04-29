@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Estilo.css">
+    <title>Cadastro - BRASCEMA</title>
+</head>
+<body>
+    <nav class="pesquisar">
+        <div class="logo">
+            <img src="img/logo.jpeg" width="29%" alt="BRASCEMA">
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="ia.html" target="_blank">ChatBot</a>
+            <a href="sobrenos.html">Sobre nós</a>
+            <a id="botao" href="cadastro.html">Cadastro</a>
+        </div>
+    </nav>
+    <div class="containercadas">
+        <div class="caixa">
+      <form>
+        <div class="cardContainer">
+          <div class="formscontainer">
+            <label for="nomeuser">Usuário: </label>
+              <input type="text" name="nomeuser" id="input-username" placeholder="Ex: Robson" max="25" required><br><br>
+            <label for="emailuser">Email: </label>
+              <input type="email" name="emailuser" id="input-email" placeholder="Ex: robsonlegal@gmail.com" max="255" required><br><br>
+            <label for="passuser">Senha: </label>
+              <input type="password" name="passuser" id="input-pass" placeholder="Ex: 12345678" max="15" required><br><br>
+          </div>
+          <button class="btn" type="submit">
+            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+              <polyline points="" class="bg-line" />
+              <polyline points="" class="hl-line" />
+            </svg>
+            <span>Enviar</span>
+          </button>
+          <button class="btn" type="reset">
+            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+              <polyline points="" class="bg-line" />
+              <polyline points="" class="hl-line" />
+            </svg>
+            <span>Apagar</span>
+          </button>
+        </div>
+      </form>
+    </div>
+    </div>
+    <footer>
+        <div class="logo-rodape">
+            <h1 class="agencia">Número e Email para Contato</h1>
+            <p style="color: white;">(13)99186-7972</p>
+            <p style="color: white;">Brascema.contato@gmail.com</p>
+             <b style="color: white;">© Todos os direitos reservados</b>
+        </div>
+       
+    </footer>
+</body>
+</html>
