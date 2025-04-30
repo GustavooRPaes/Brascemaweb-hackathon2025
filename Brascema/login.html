@@ -22,15 +22,35 @@
             <a href="ia.html" target="_blank">ChatBot</a>
             <a href="sobrenos.html">Sobre nós</a>
             <a id="botao" href="cadastro.html">Cadastro</a>
+            <a id="botao" href="login.html">Login</a>
         </div>
-        <footer>
-            <div class="logo-rodape">
-                <h1 class="agencia">Número e Email para Contato</h1>
-                <p style="color: white;">(13)99186-7972</p>
-                <p style="color: white;">Brascema.contato@gmail.com</p>
-                 <b style="color: white;">© Todos os direitos reservados</b>
-            </div>
-           
-        </footer>
+        <div class="containercadas">
+            <div class="caixa">
+                <form action="banco_dados/login.php" method="post">
+                    <div class="cardContainer">
+                      <div class="formscontainer">
+                        <label for="emailuser">Email: </label>
+                          <input type="email" name="email" id="input-email" placeholder="Ex: leandrogay@gaymail.com" max="255" required><br><br>
+                        <label for="password">Senha:</label>
+                          <input type="password" name="password" id="input-pass" placeholder="Ex: 2345678" max="15" required><br>
+                      </div><br><br>
+                      <button class="btn" type="submit">
+                        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                        </svg>
+                        <span>Enviar</span>
+                      </button>
+                      <button class="btn" type="reset" onclick="voltar()">
+                        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                        </svg>
+                        <span>Apagar</span>
+                      </button>
+                    </div>
+                  </form>
+        </div>
+        </div>
 </body>
 </html>
